@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Blordle — a tiny daily word guessing game.">
+  <title>Blordle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div>
+        <p class="eyebrow">A daily word game</p>
+        <h1>Blordle</h1>
+      </div>
+      <button id="helpButton" class="icon-button" type="button" aria-label="How to play">?</button>
+    </header>
+
+    <section class="intro" aria-labelledby="game-instructions">
+      <p id="game-instructions">Guess the word in <strong>3 tries</strong>.</p>
+      <p class="hint">Hint: the words in this game are made from two words starting with the same letter.</p>
+    </section>
+
+    <section id="board" class="board" aria-label="Guess board"></section>
+
+    <p id="message" class="message" role="status" aria-live="polite"></p>
+
+    <section id="keyboard" class="keyboard" aria-label="On-screen keyboard"></section>
+
+    <div class="actions">
+      <button id="newGameButton" class="secondary-button" type="button">New game</button>
+      <button id="shareButton" class="secondary-button" type="button">Share result</button>
+    </div>
+
+    <footer>
+      <span id="dateLabel"></span>
+    </footer>
+  </main>
+
+  <dialog id="helpDialog">
+    <div class="dialog-content">
+      <button id="closeHelp" class="close-button" type="button" aria-label="Close">×</button>
+      <h2>How to play</h2>
+      <p>You have 3 tries to guess today's word.</p>
+      <ul>
+        <li><span class="example correct">A</span> Green means the letter is in the right place.</li>
+        <li><span class="example present">A</span> Gold means the letter is in the word, but somewhere else.</li>
+        <li><span class="example absent">A</span> Gray means the letter is not in the word.</li>
+      </ul>
+      <p>Type on your keyboard or tap the letters on screen.</p>
+    </div>
+  </dialog>
+
+  <script src="words.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
