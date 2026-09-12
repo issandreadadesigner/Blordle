@@ -7,7 +7,7 @@ A simple public web word game.
 **Goal:** guess the secret word in **3 tries**.
 
 - Every word in the bank is two words smashed together that both start with
-  the same letter — for example `coolcat`, `jazzyjuice`, `headhome`. That's
+  the same letter — for example `coolcut`, `jazzyjoyce`, `headheme`. That's
   the only hint you get going in.
 - Word length changes from day to day (some are short, like `xoxo`; some
   are long, like `incrediblyimportant`). The board always shows exactly as
