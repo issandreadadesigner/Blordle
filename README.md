@@ -1,6 +1,6 @@
 # Blordle
 
-A simple public web word game.
+A simple public web daily word game.
 
 ## How to Play
 
